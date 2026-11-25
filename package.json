@@ -1,0 +1,23 @@
+{
+  "name": "microsoft-to-do-exporter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Free, open-source, browser-only exporter for Microsoft To Do lists, tasks, subtasks, notes, and attachments.",
+  "scripts": {
+    "dev": "vite --port 5175 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 5175 --strictPort",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@azure/msal-browser": "^4.12.0",
+    "jszip": "^3.10.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "vite": "^6.3.5",
+    "vitest": "^3.1.4"
+  }
+}

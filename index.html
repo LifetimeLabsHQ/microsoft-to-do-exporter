@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft To Do Exporter: Export Tasks to ZIP, CSV &amp; Markdown</title>
+    <meta
+      name="description"
+      content="Export all your Microsoft To Do lists, tasks, subtasks, notes, and attachments directly in your browser. Free, open source, read-only, zero servers."
+    />
+    <link rel="canonical" href="https://todo.privacynotes.app/" />
+    <link rel="icon" type="image/svg+xml" href="/microsoft-to-do.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://todo.privacynotes.app/" />
+    <meta property="og:title" content="Microsoft To Do Exporter: Export Tasks to ZIP, CSV &amp; Markdown" />
+    <meta
+      property="og:description"
+      content="Export all your Microsoft To Do lists, tasks, subtasks, notes, and attachments directly in your browser. Free, open source, read-only, zero servers."
+    />
+    <meta name="referrer" content="no-referrer" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Microsoft To Do Exporter",
+        "url": "https://todo.privacynotes.app/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web",
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "Free browser-only tool to export Microsoft To Do lists, tasks, subtasks, notes, and attachments as ZIP, JSON, Markdown, and CSV.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "PrivacyNotes",
+          "url": "https://privacynotes.app/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="https://privacynotes.app/" target="_blank" rel="noopener noreferrer" aria-label="PrivacyNotes">
+        <img class="brand-lockup only-light" src="/privacynotes-lockup-color-light.svg" alt="PrivacyNotes" height="26" />
+        <img class="brand-lockup only-dark" src="/privacynotes-lockup-color-dark.svg" alt="PrivacyNotes" height="26" />
+      </a>
+
+      <nav class="topbar-right" aria-label="Header navigation">
+        <a class="nav-link" href="https://privacynotes.app/help/import/microsoft-to-do" target="_blank" rel="noopener noreferrer">Guide</a>
+
+        <div class="theme-switch" role="group" aria-label="Color theme">
+          <button type="button" class="theme-btn" data-theme-choice="auto" title="Auto (system)" aria-label="Match system theme" aria-pressed="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </button>
+          <button type="button" class="theme-btn" data-theme-choice="light" title="Light" aria-label="Light theme" aria-pressed="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          </button>
+          <button type="button" class="theme-btn" data-theme-choice="dark" title="Dark" aria-label="Dark theme" aria-pressed="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </button>
+        </div>
+
+        <a class="nav-btn" href="https://use.privacynotes.app" target="_blank" rel="noopener noreferrer">Open app</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <div class="hero-title-row">
+          <img class="hero-icon" src="/microsoft-to-do.svg" alt="" width="34" height="34" />
+          <h1>Microsoft To Do Exporter</h1>
+        </div>
+        <p class="lead">
+          Back up all your lists, tasks, subtasks, notes, and attachments as a local ZIP (JSON, Markdown, and CSV) in under a minute. Works with any app.
+        </p>
+        <ul class="facts-bar" aria-label="Privacy and speed guarantees">
+          <li>
+            <strong>Zero servers</strong>
+            <span>Runs 100% in your browser</span>
+          </li>
+          <li>
+            <strong>Read-only access</strong>
+            <span>Cannot edit or delete tasks</span>
+          </li>
+          <li>
+            <strong><a href="https://github.com/LifetimeLabsHQ/microsoft-to-do-exporter" target="_blank" rel="noopener noreferrer">Open source</a></strong>
+            <span>Inspect code or DevTools</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="panel" id="app-root">
+        <div class="panel-body">
+          <p class="muted">Loading...</p>
+        </div>
+      </section>
+
+      <section class="pn-strip" aria-label="About PrivacyNotes">
+        <a class="pn-strip-icon" href="https://privacynotes.app/" target="_blank" rel="noopener noreferrer" aria-label="PrivacyNotes">
+          <img src="/privacynotes-icon.svg" alt="PrivacyNotes" width="34" height="37" />
+        </a>
+        <div class="pn-strip-body">
+          <h2>Need a home for your tasks before June 2027?</h2>
+          <p>
+            Import your exported ZIP into
+            <a class="brand-link" href="https://privacynotes.app/" target="_blank" rel="noopener noreferrer"><span class="pn-mark"><span class="pn-mark-a">Privacy</span>Notes</span></a>
+            - tasks, notes, calendar, and vault where your notes are encrypted on your device.
+          </p>
+          <div class="pn-strip-actions">
+            <a class="btn btn-secondary btn-sm" href="https://privacynotes.app/" target="_blank" rel="noopener noreferrer">Visit website</a>
+            <a class="btn btn-secondary btn-sm" href="https://try.privacynotes.app/" target="_blank" rel="noopener noreferrer">Try live demo</a>
+            <a class="btn btn-ghost btn-sm" href="https://privacynotes.app/help/import/microsoft-to-do" target="_blank" rel="noopener noreferrer">Import guide</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="https://github.com/LifetimeLabsHQ/microsoft-to-do-exporter" target="_blank" rel="noopener noreferrer">Open source</a>
+      <span aria-hidden="true">&middot;</span>
+      <a class="brand-link" href="https://privacynotes.app/" target="_blank" rel="noopener noreferrer"><span class="pn-mark"><span class="pn-mark-a">Privacy</span>Notes.app</span></a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="https://privacynotes.app/privacy" target="_blank" rel="noopener noreferrer">Privacy</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="https://privacynotes.app/terms" target="_blank" rel="noopener noreferrer">Terms</a>
+      <span aria-hidden="true">&middot;</span>
+      <span>Not affiliated with Microsoft</span>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
